@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+
+<body>
+    <header>
+        <div class="start">
+            <p>
+                대홍단
+            </p>
+            <nav>
+                <a>연극 페이지</a>
+                <a>팀 소개</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="mainimg" style="overflow: hidden;">
+            <div class="kontainer">
+                <div class="inner">
+                    <img src="이미지/옥탑방고양이.png">
+                    <div class="list">
+                        <strong>옥탑방 고양이</strong>
+                        <p class="inform"><br>작가의 꿈을 안고 상경한 경상도 여자 정은과 정체를 알 수 없는 미스터리 서울 남자 경민이 옥탑방으로 동시에 이사를 온다. 알고 보니 이중 계약..
+                            <br><br><button>연극 상세 정보-></button></p>
+                        </class>
+                    </div>
+                </div>
+                <div class="inner">
+                    <img src="이미지/김종욱찾기.png">
+                    <div class="list">
+                        <strong>옥탑방 고양이</strong></div>
+                    <p class="inform"><br>냥냥~
+                        <br><br><button>연극 상세 정보-></button></p>
+
+                </div>
+                <div class="inner">
+                    <img src="이미지/죽여주는이야기.png">
+                    <div class="list">
+                        <strong>옥탑방 고양이</strong></div>
+                    <p class="inform"><br>냥냥~
+                        <br><br><button>연극 상세 정보-></button></p>
+
+                </div>
+            </div>
+            <div class="buttons">
+                <img src="btn_prev.png" class="btnp">
+                <img src="btn_next.png" class="btnn">
+            </div>
+        </div>
+        <div class="inner-container">
+            <div id="container"></div>
+            <p class="title">연극거리 근처 명소</p>
+            <div class="box"></div>
+            <div id="명소">
+                <div class="mslist">
+                    <p class="마로니에">마로니에공원</p>
+                    <img src="이미지/마로니에공원.png" class="마로니에공원"></img>
+                </div>
+                <div class="mslist">
+                    <p class="낙산">낙산공원</p>
+                    <img src="이미지/낙산공원.png" class="낙산공원"></img>
+                </div>
+                <div class="mslast">
+                    <p class="이화">이화마을</p>
+                    <img src="이미지/이화마을.png" class="이화마을"></img>
+                </div>
+            </div>
+            <div class="box"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Team.대홍단 주소 [03086] 서울특별시 종로구 대학로 116 4층 (공공일호)
+            <br>메일 daehongdan7@gmail.com 전화 02-123-4567</p>
+    </footer>
+    <script>
+        var a = 0
+        document.querySelector(".btnp").addEventListener('click', function() {
+            if (0 > a)
+                a = a + 720;
+            document.querySelector(".kontainer").style.transform = "translate(" + a + "px)"
+
+        });
+        document.querySelector(".btnn").addEventListener('click', function() {
+            if (-1440 < a)
+                a = a - 720;
+            document.querySelector(".kontainer").style.transform = "translate(" + a + "px)"
+
+        });
+        //         window.onload = function() {
+        //             var data = [{
+        //                 "main": "이미지/스크린샷 2020-12-15 오전 11.29.03.png",
+        //                 "content": "연극 ooo",
+        //                 "line": "common"
+        //             }, {
+        //                 "main": "배움의 원칙",
+        //                 "content": "연극 ooo",
+        //                 "line": "common"
+        //             }, {
+        //                 "main": "배움의 원칙",
+        //                 "content": "연극 ooo",
+        //                 "line": "last"
+        //             }]
+
+        //             for (var i in data) {
+        //                 var singleData = data[i]
+        //                 console.log(singleData)
+        //                 var element = document.createElement('div')
+        //                 var main = document.createElement('p')
+        //                 var content = document.createElement('p')
+
+        //                 main.innerText = singleData.main
+        //                 content.innerText = singleData.content
+
+        //                 element.appendChild(main)
+        //                 element.appendChild(content)
+        //                 element.classList.add('box')
+        //                 element.classList.add(singleData["line"])
+
+        //                 document.getElementById('container').appendChild(element)
+        //             }
+        //         }
+    </script>
+</body>
+
+</html>
