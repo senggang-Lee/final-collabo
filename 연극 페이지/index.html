@@ -1,25 +1,39 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>daehongdan</title>
- </head>
- <style>
-      #logo1 {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daehongdan</title>
+</head>
+<style>
+    #logo1 {
         margin-top: 20px;
         margin-left: 100px;
         font-size: 100px;
     }
 
-    #위치-사진 {
+    .container {
         height: auto;
     }
 
+    .container2 {
+        width: 1500px;
+        height: 300px;
+        text-align: center;
+        background-color: rgba(38, 38, 143, 0.801);
+    }
+
     #logo2 {
-        margin-left: 800px;
+        width: 700px;
+        height: 100px;
+        left: 415px;
+        top: 1680px;
+        position: absolute;
+        text-align: center;
         font-size: 60px;
+        background-color: white;
+        color: rgba(38, 38, 143, 0.801);
     }
 
 
@@ -27,19 +41,49 @@
         padding: 0;
         list-style: none;
         overflow: hidden;
+        width: 1000px;
+        margin: 0 auto;
     }
 
     .playlist li button {
-        width: 600px;
+        width: 90%;
         height: 100px;
     }
 
     .playlist li {
         float: left;
-        width: 50%;
+        width: 31%;
         text-align: center;
         margin-top: 10px;
     }
+
+    #button1 {
+        width: 300px;
+        background-color: skyblue;
+    }
+
+    #button1:hover {
+        background-color: rgb(114, 176, 201);
+    }
+
+    #button2 {
+        width: 300px;
+        background-color: rgb(232, 195, 127);
+    }
+
+    #button2:hover {
+        background-color: rgb(192, 162, 107);
+    }
+
+    #button3 {
+        width: 300px;
+        background-color: rgb(112, 112, 247);
+    }
+
+    #button3:hover {
+        background-color: rgb(87, 87, 194);
+    }
+
 
 
     #box {
@@ -49,143 +93,310 @@
 
     .inner-container2 {
         background-color: #64AAFF;
-        height: 250px;
-        font-size: 40px;
+        height: 120px;
+        font-size: 20px;
         text-align: center;
     }
 
-     .gayyo {
-         width: 70%;
-         height: 200px;
-         background: #ffffff;
-         margin: 20px auto;
-         border: 2px solid #45b5ff;
-         overflow-wrap: break-word;
-         position: relative;
-         text-align: left;
+    .gayyo {
+        width: 70%;
+        height: 200px;
+        background: #ffffff;
+        margin: 20px auto;
+        border: 2px solid #45b5ff;
+        overflow-wrap: break-word;
+        position: relative;
+        text-align: left;
 
-     }
+    }
 
-     .seolmyonglan {
-         width: 70%;
-         height: 200px;
-         background: #5ABEFF;
-         margin: 20px auto;
+    .seolmyonglan {
+        width: 70%;
+        height: 200px;
+        background: #5ABEFF;
+        margin: 20px auto;
 
-     }
+    }
 
-     .cont1 {
-         width: 70%;
-         height: 10px;
-         background: #ffffff;
-         margin: 20px auto;
-     }
+    .cont1 {
+        width: 70%;
+        height: 10px;
+        background: #ffffff;
+        margin: 20px auto;
+    }
 
-     .sajin {
-         text-align: center;
-         width: 70%;
-         margin: 0 auto;
+    .sajin {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
 
-     }
+    }
 
-     .sajin img {
-         margin: 0 10px;
-         height: 400px;
+    .sajin img {
+        margin: 0 10px;
+        height: 400px;
 
-     }
+    }
 
-     .hr {
-         margin: 100px;
-     }
+    .hr {
+        margin: 100px;
+    }
 
-     .binbox {
-         height: 50px;
-         width: 200px;
-         color: white;
-     }
+    .binbox {
+        height: 50px;
+        width: 200px;
+        color: white;
+    }
 
-     .binbox2 {
-         height: 30px;
-         width: 200px;
-         color: white;
-     }
- </style>
-
- <header>
-     <div class="binbox"></div>
- <hr color="#9BC3FF">
- <div class="binbox2"></div>
- </header>
- <content>
- <div class="seolmyonglan">설명</div>
- <div class="sajin"><img src="http://tny.im/nuo" >
-     <img src="http://tny.im/nuO" ></div>
+    .binbox2 {
+        height: 30px;
+        width: 200px;
+        color: white;
+    }
 
 
- <div class="cont1">개요</div>
 
- <div class="gayyo"><h4>
- 극장 - 틴틴홀 대학로점
- <br>
- 가격 - 8000원~35000원/인
- <br>
- 공연 시간: 1시간 40분
- <br>
- 관람 등급: 13세 이상 (신분증/학생증 필수)
- <br>
- <br>
- 작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이), 
- 그리고 미야라는 진짜 고양이, 
- 이렇게 셋이서 알콩달콩 살아가면서 때론 서로 
- 치고받고 싸우면서 정들어가는 동거 이야기이다.</h4>
- </div>
- </content>
+    #ping1 {
+        /* 왼쪽에서 두 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 49%;
+        top: 1260px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
 
- <body>
-</div>
-<div class="inner-container1">
-    <nav>
-        <p id="logo1"> 위치 </p>
-        <div class="picture">
+    #ping2 {
+        /* 왼쪽에서 여덟 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 67%;
+        top: 1110px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
 
-            <div id="위치-사진"><img src="map.jpg" width="1450"></div>
-        </div>
-        <p id="logo2"> 주변에서 할 수 있는 것</p>
-        <ul class="playlist">
-            <li>
-                <button type="button" id="button1">놀거리</button>
-            </li>
-            <li>
-                <button type="button" id="button2">먹거리</button>
-            </li>
-            <li>
-                <button type="button" id="button3">아직</button>
-            </li>
-            <li>
-                <button type="button" id="button4">아직</button>
-            </li>
-            <li>
-                <button type="button" id="button5">아직</button>
-            </li>
-            <li>
-                <button type="button" id="button6">아직</button>
-            </li>
-            <li>
-                <button type="button" id="button7">아직</button>
-            </li>
-            <li>
-                <button type="button" id="button8">아직</button>
-            </li>
-        </ul>
+    #ping3 {
+        /* 왼쪽에서 일곱 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 66%;
+        top: 1140px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
+
+    #ping4 {
+        /* 왼쪽에서 세 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 49%;
+        top: 1280px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+
+    #ping5 {
+        /* 왼쪽에서 첫 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 47%;
+        top: 1190px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+
+    #ping6 {
+        /* 왼쪽에서 여섯 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 56%;
+        top: 1100px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+
+    #ping7 {
+        /* 왼쪽에서 다섯 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 56%;
+        top: 1130px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+
+    #ping8 {
+        /* 맨 아래 꺼 */
+        list-style: inside;
+        visibility: hidden;
+        left: 57%;
+        top: 1580px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+
+    #ping9 {
+        /* 왼쪽에서 네 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 55%;
+        top: 1250px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+</style>
+
+<header>
+    <div class="binbox"></div>
+    <hr color="#9BC3FF">
+    <div class="binbox2"></div>
+</header>
+<content>
+    <div class="seolmyonglan">설명</div>
+    <div class="sajin"><img src="http://tny.im/nuo">
+        <img src="http://tny.im/nuO">
+    </div>
+
+
+    <div class="cont1">개요</div>
+
+    <div class="gayyo">
+        <h4>
+            극장 - 틴틴홀 대학로점
+            <br>
+            가격 - 8000원~35000원/인
+            <br>
+            공연 시간: 1시간 40분
+            <br>
+            관람 등급: 13세 이상 (신분증/학생증 필수)
+            <br>
+            <br>
+            작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이),
+            그리고 미야라는 진짜 고양이.
+            이렇게 셋이서 알콩달콩 살아가면서 때론 서로
+            치고받고 싸우면서 정들어가는 동거 이야기이다.
+        </h4>
+    </div>
+</content>
+
+<body>
+    </div>
+    <div class="inner-container1">
+        <nav>
+            <p id="logo1"> 위치 </p>
+            <div class="picture">
+
+                <div class="container"><img src="map.jpg" width="1500">
+                    <div id="ping1"></div>
+                    <div id="ping2"></div>
+                    <div id="ping3"></div>
+                    <div id="ping4"></div>
+                    <div id="ping5"></div>
+                    <div id="ping6"></div>
+                    <div id="ping7"></div>
+                    <div id="ping8"></div>
+                    <div id="ping9"></div>
+
+                </div>
+
+            </div>
+            <div class="container2">
+                <p id="logo2"> <strong>주변에서 할 수 있는 것</strong></p>
+            </div>
+            <ul class="playlist">
+                <li>
+                    <button type="button" id="button1">음식점</button>
+                </li>
+                <li>
+                    <button type="button" id="button2">카페</button>
+                </li>
+                <li>
+                    <button type="button" id="button3">편의점</button>
+                </li>
+                <li>
+                    <button type="button" id="button4">버튼4</button>
+                </li>
+                <li>
+                    <button type="button" id="button5">버튼5</button>
+                </li>
+                <li>
+                    <button type="button" id="button6">버튼6</button>
+                </li>
+                <li>
+                    <button type="button" id="button7">버튼7</button>
+                </li>
+                <li>
+                    <button type="button" id="button8">버튼8</button>
+                </li>
+                <li>
+                    <button type="button" id="button9">버튼9</button>
+                </li>
+                <li>
+                    <button type="button" id="button10">버튼10</button>
+                </li>
+                <li>
+                    <button type="button" id="button11">버튼11</button>
+                </li>
+                <li>
+                    <button type="button" id="button12">버튼12</button>
+                </li>
+            </ul>
 </body>
+<script>
+    var a = document.getElementById('ping1')
+    var b = document.getElementById('ping2')
+    var c = document.getElementById('ping3')
+    var d = document.getElementById('ping4')
+    var e = document.getElementById('ping5')
+    var f = document.getElementById('ping6')
+    var g = document.getElementById('ping7')
+    var h = document.getElementById('ping8')
+    var i = document.getElementById('ping9')
+
+
+    document.getElementById('button1').addEventListener('click', function () {
+        a.style.visibility = 'visible';
+        b.style.visibility = 'visible';
+        c.style.visibility = 'visible';
+    })
+    document.getElementById('button2').addEventListener('click', function () {
+        d.style.visibility = 'visible';
+        e.style.visibility = 'visible';
+        f.style.visibility = 'visible';
+    })
+    document.getElementById('button3').addEventListener('click', function () {
+        g.style.visibility = 'visible';
+        h.style.visibility = 'visible';
+        i.style.visibility = 'visible';
+    })
+</script>
 <footer>
-<div class="inner-container2">
-    <p class="menu"> <br>Team.대홍단 TEL.010 1234 5678<br>
-        이메일 daehongdan7@gmail.com<br>
-        주소 : 서울특별시 종로구 이화동 대학로 116 공공그라운드 4층 거꾸로 캠퍼스
-        <br>
-</div>
-</box>
+    <div class="inner-container2">
+        <p class="menu"> <br>Team.대홍단 TEL.010 1234 5678<br>
+            이메일 daehongdan7@gmail.com<br>
+            주소 : 서울특별시 종로구 이화동 대학로 116 공공그라운드 4층 거꾸로 캠퍼스
+            <br>
+    </div>
+    </box>
 
 </footer>
 
