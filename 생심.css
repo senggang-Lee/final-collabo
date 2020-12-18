@@ -17,7 +17,7 @@
 
 }
 #maintitle{
-    background-color: #5abeff;
+    background-color: #0064CD;
     padding: 20px;
     
     text-align: center;
@@ -69,14 +69,14 @@
 
 }
 .제목 {
-    background-color: #5ABEFF;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
+    font-size: 50px;
 }
 main .inner-container {
     width: 1650px;
-    background-color: gray;
+    background-color: #0064CD;
     height: 750px;
 }
 .배경 {
@@ -84,7 +84,7 @@ main .inner-container {
     flex-wrap: wrap;
 }
 footer {
-    background-color: #5ABEFF;
+    background-color: #1E82CD;
     text-align: center;
     padding: 30px;
 }
@@ -93,6 +93,7 @@ footer {
     position: relative;
     top: 10px;
     right: 40px;
+    color: white;
 }
 .img1 {
     padding-left: 30px;
@@ -128,6 +129,7 @@ footer {
     position: relative;
     left: 460px;
     top: 130px;
+    color: white;
 }
 .image12 {
     position: relative;
@@ -138,6 +140,7 @@ footer {
     position: relative;
     left: 560px;
     top: 130px;
+    color: white;
 }
 .image13 {
     position: relative;
@@ -148,5 +151,6 @@ footer {
     position: relative;
     left: 925px;
     bottom: 144px;
+    color: white;
 }
 
