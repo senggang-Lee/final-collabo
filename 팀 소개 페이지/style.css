@@ -73,8 +73,8 @@ footer {
 }
 .image13 {
     position: relative;
-    left: 720px;
-    bottom: 105px;
+    left: 710px;
+    bottom: 120px;
 }
 .name13{
     position: relative;
@@ -83,16 +83,16 @@ footer {
     color: white;
 }
 .image11,.image12{
-    padding-left: 145px;
+    padding-left: 160px;
     padding-top: 50px;
     position: relative;
-    left: 220px;
-    top: 138px;
+    left: 200px;
+    top: 120px;
 }
 .name11,.name12 {
     position: relative;
     top: 130px;
-    left: 280px;
+    left: 283px;
     color: white;
     padding-top: 15px;
     padding-left: 160px;
