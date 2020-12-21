@@ -20,7 +20,8 @@ header p {
     font-size: 40px;
     position: absolute;
     line-height: 50%;
-    margin-left: 40px;
+    margin-left: 20px;
+    top: -15px;
 }
 
 header nav {
@@ -47,6 +48,10 @@ header nav a {
 #text{
     font-size: 55px;
 }
+#main{
+    width: 100vw;
+    height: 1300px;
+}
 #maintitle{
     text-align: center;
     font-size: 50px;
@@ -64,7 +69,7 @@ header nav a {
     padding:30px 0 30px 0 ;
     color: white;
     position: absolute;
-    top: 172%;
+    margin-top:-25% ;
     
 }
 #strong{
@@ -80,40 +85,41 @@ header nav a {
     
 }
 #lowtext{
+    width: 1000px;   
     display: flex;
-    position: relative;
+    position: absolute;
     left: 20%;
     
 }
-#lowtext1{
+.lowtext1{
     width: 200px;
-    background-color: rgb(129, 172, 247);
+    background-color: rgb(129, 172, 247); 
     /* background-color: rgba(38, 76, 140, 0.5); */
     padding: 25px;
-    color: white;
+    /* color: white; */
     font-size: 20px;
-    margin: 20px;
+    margin: 20px; 
+    
 }
-#lowtext2{
+.lowtext2{
     width: 200px;
-    background-color: rgb(232, 195, 127);
+    background-color: rgb(249, 228, 189); 
     /* background-color: rgba(225, 194, 80, 0.5); */
-    padding: 25px;
-    color: white;
+     padding: 25px; 
+    /* color: white;  */
     font-size: 20px;
     margin: 20px;
 }
-#lowtext3{
+.lowtext3{
     width: 200px;
-    background-color: rgb(129, 172, 247);
+    background-color: rgb(129, 172, 247); 
     /* background-color: rgba(38, 76, 140, 0.5); */
     
-    padding: 25px;
-    color: white;
+    padding: 25px; 
+    /* color: white; */
     font-size: 20px;
-    margin: 20px;
+    margin: 20px; 
 }
-
 
 
         </style>
@@ -124,7 +130,7 @@ header nav a {
    <header>
     <div class="start">
         <p>
-            대홍단
+            <img src="logo.png" width="150px">
         </p>
         <nav>
             <a>연극 페이지</a>
@@ -147,24 +153,29 @@ header nav a {
     
     <div id =low>
         <div id= lowtitle>이 웹을 만들기까지</div>
-
+        
         <div id = lowtext>
-            <div id =lowtext1> 
+            <div class ="lowtext1 moved1" >  
+                
                 이러게 처참한 현실을 마주하고나서야  우리는 
 우리가 지내고있는 대학로의 연극상권 뿐만아니라 이 아름다운거리 대학로가 무너지고 있다는것을 인지하게 되었고
-
-               </div>
-               <div id=lowtext2><br>
+</div>
+               
+               <div class="lowtext2 moved2">
+              
                 이런 상황을 해결하기 위해
 연극과 예술이라는 아름답운 고유의 브랜딩되어있는 
 대학로를 다른지역 다른사람들에게 잘 알려지게 하고싶었다
-
-               </div>
-               <div id=lowtext3> 
+</div>
+              
+               
+               <div class="lowtext3 moved3"> 
+                  
                 그래서 대학로와 예술, 연극, 상권 등에대해 오래동안 조사를 했고 탐구한 내용을 바탕으로 대학로만의 고유 브랜드를 살리면서 많은사람이 쉽게 접근할수있는 이 웹페이지를 제작하게 되었습니다.
-                
+            </div>
         </div>
     </div>
+</div>
     
     
     <!-- 심바 -->
@@ -174,7 +185,7 @@ header nav a {
             <div class="배경">
             <div class="img1">
                 <div class="img">
-                    <img src="poto/나물.png" height="250px" width="250px">
+                    <img src="poto/나물.png" height="200px" width="200px">
                 </div>
                 <div class="name">
                     나물    
@@ -182,7 +193,7 @@ header nav a {
             </div>
             <div class="img2">
                 <div class="img">
-                <img src="poto/니토.png" height="250px" width="250px">
+                <img src="poto/니토.png" height="200px" width="200px">
                 </div>
                 <div class="name">
                     니토
@@ -190,7 +201,7 @@ header nav a {
             </div>
             <div class="img3">
                 <div class="img">
-                <img src="poto/부자.png" height="250px" width="250px">
+                <img src="poto/부자.png" height="200px" width="200px">
                 </div>
                 <div class="name">
                     부자
@@ -198,7 +209,7 @@ header nav a {
             </div>
             <div class="img4">
                 <div class="img">
-                <img src="poto/목표.png" height="250px" width="250px">
+                <img src="poto/목표.png" height="200px" width="200px">
                 </div>
                 <div class="name">
                     목표
@@ -206,7 +217,7 @@ header nav a {
             </div>
             <div class="img5">
                 <div class="image11">
-                <img src="poto/심바.png" height="200px" width="250px">
+                <img src="poto/심바.png" height="200px" width="200px">
                 </div>
                 <div class="name11">
                     심바
@@ -214,14 +225,14 @@ header nav a {
             </div>
             <div class="img6">
                 <div class="image12">
-                <img src="poto/생강.png" height="250px" width="250px">
+                <img src="poto/생강.png" height="200px" width="200px">
             </div>
             <div class="name12">
                 생강
             </div>
             <div class="img7">
                 <div class="image13">
-                <img src="poto/루트.png" height="250px" width="250px">
+                <img src="poto/루트.png" height="200px" width="200px">
                 </div>
                 <div class="name13">
                     루트
@@ -244,5 +255,10 @@ header nav a {
     
 </footer>
 
+<script>
+    document.querySelector(".lowtext1").addEventListener('mouseenter', function(){
+        document.querySelector(".lowtext1").style.whdth = '500px'
+    })
+</script>
 </body>
 </html>
