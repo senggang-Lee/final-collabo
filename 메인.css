@@ -9,21 +9,22 @@ body {
     overflow-x: hidden;
 }
 
+
 header {
     height: 100px;
     width: auto;
     background-color: white;
-    text-align: center;
     position: relative;
     top: 0px;
     left: 0px;
 }
 
-header p {
+header .dhd {
     font-size: 40px;
     position: absolute;
-    line-height: 50%;
+    line-height: 250%;
     margin-left: 40px;
+    color: black;
 }
 
 header nav {

@@ -8,7 +8,7 @@
 }
 main .inner-container {
     width: 100%;
-    background-color: #0064CD;
+    background-color: rgb(249, 228, 189);
     height: 750px;
 }
 .배경 {
@@ -16,7 +16,7 @@ main .inner-container {
     flex-wrap: wrap;
 }
 footer {
-    background-color: #1E82CD;
+    background-color: rgb(129, 172, 247);
     text-align: center;
     padding: 30px;
 }
@@ -25,7 +25,7 @@ footer {
     position: relative;
     top: 15px;
     right: 40px;
-    color: white;
+    color: black;
 }
 .img1 {
     padding-left: 30px;
@@ -60,7 +60,7 @@ footer {
     position: relative;
     left: 460px;
     top: 130px;
-    color: white;
+    color: black;
 }
 .image12 {
     position: relative;
@@ -80,7 +80,7 @@ footer {
     position: relative;
     left: 810px;
     bottom: 97px;
-    color: white;
+    color: black;
 }
 .image11,.image12{
     padding-left: 160px;
@@ -93,7 +93,7 @@ footer {
     position: relative;
     top: 130px;
     left: 283px;
-    color: white;
+    color: black;
     padding-top: 15px;
     padding-left: 160px;
 }
