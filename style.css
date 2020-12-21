@@ -244,3 +244,130 @@ footer {
     padding: 10px 0;
     z-index: 2;
 }
+body{
+    max-width: none;
+    margin: auto 0;
+}
+.sajin img {
+    margin: 0 10px;
+}
+
+.sajin {
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+
+}
+
+header {
+    position: relative;
+}
+
+.top-menu {
+    margin-left: 20px;
+    
+    height: 20px;
+}
+
+.a1:hover {
+    color: red;
+}
+.a1 {
+    color: black;
+    text-decoration: none;
+    font-family: Noto Sans KR;
+    font-weight: 100;
+    line-height: 20px;
+
+}
+
+.a2 {
+    color: black;
+    text-decoration: none;
+    font-family: Noto Sans KR;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+
+.title-bar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 117, 186);
+    /*border: 20px solid rgb(255, 0, 0);*/
+    text-align: center;
+    color: white;
+    margin-top: 30px; 
+}
+
+.title-bar h1 {
+    font-family: Noto Sans KR;
+    line-height: 70px;
+    font-weight: 900;
+}
+
+.box-line {
+    margin-top: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(1, 78, 128);
+}
+
+.box-tag {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    top: 70px;
+    left: 25px;
+    opacity: 0.8;
+    background-color: rgb(254, 141, 197);
+}
+
+.contentLayer-tag {
+    position: absolute;
+    width: 300px;
+    top: 430px;
+    height: 480px;
+    left: 610px;
+    opacity: 0.73;
+    background-color: rgb(0, 117, 186);
+    margin-right: 20px;
+}
+
+.contentLayer-text {
+    position: absolute;
+    width: 280px;
+    top: 420px;
+    height: 0px;
+    left: 620px;
+    color: white;
+    font-family: Noto Sans KR;
+}
+.contentLayer-text h4{
+    font-weight: 100;
+}
+.contentLayer-text h3{
+    position: relative;
+    top: 7px;
+}
+.contentLayer-title {
+    border-radius: 7.5px;
+    margin-top: 15px;
+    width: 180px;
+    height: 45px;
+    text-align: center;
+    background-color: rgb(255, 144, 4);
+    font-family: Noto Sans KR;
+    font-weight: 300;
+}
+.contentLayer-title h4{
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.logo-img{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+}
+

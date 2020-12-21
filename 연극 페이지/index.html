@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>daehongdan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Jua&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    
 </head>
 <style>
     #logo1 {
@@ -97,62 +101,133 @@
         font-size: 20px;
         text-align: center;
     }
-
-    .gayyo {
-        width: 70%;
-        height: 200px;
-        background: #ffffff;
-        margin: 20px auto;
-        border: 2px solid #45b5ff;
-        overflow-wrap: break-word;
-        position: relative;
-        text-align: left;
-
+    body{
+        max-width: none;
+        margin: auto 0;
     }
-
-    .seolmyonglan {
-        width: 70%;
-        height: 200px;
-        background: #5ABEFF;
-        margin: 20px auto;
-
-    }
-
-    .cont1 {
-        width: 70%;
-        height: 10px;
-        background: #ffffff;
-        margin: 20px auto;
+    .sajin img {
+        margin: 0 10px;
     }
 
     .sajin {
+        margin-top: 50px;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    header {
+        position: relative;
+    }
+
+    .top-menu {
+        margin-left: 20px;
+        
+        height: 20px;
+    }
+
+    .a1:hover {
+        color: red;
+    }
+    .a1 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+
+    }
+
+    .a2 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+    }
+
+
+    .title-bar {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(0, 117, 186);
+        /*border: 20px solid rgb(255, 0, 0);*/
         text-align: center;
-        width: 70%;
-        margin: 0 auto;
-
-    }
-
-    .sajin img {
-        margin: 0 10px;
-        height: 400px;
-
-    }
-
-    .hr {
-        margin: 100px;
-    }
-
-    .binbox {
-        height: 50px;
-        width: 200px;
         color: white;
+        margin-top: 30px; 
     }
 
-    .binbox2 {
+    .title-bar h1 {
+        font-family: Noto Sans KR;
+        line-height: 70px;
+        font-weight: 900;
+    }
+
+    .box-line {
+        margin-top: 5px;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(1, 78, 128);
+    }
+
+    .box-tag {
+        position: absolute;
+        width: 40px;
+        height: 100px;
+        top: 70px;
+        left: 25px;
+        opacity: 0.8;
+        background-color: rgb(254, 141, 197);
+    }
+
+    .contentLayer-tag {
+        position: absolute;
+        width: 300px;
+        top: 430px;
+        height: 480px;
+        left: 610px;
+        opacity: 0.73;
+        background-color: rgb(0, 117, 186);
+        margin-right: 20px;
+    }
+
+    .contentLayer-text {
+        position: absolute;
+        width: 280px;
+        top: 420px;
+        height: 0px;
+        left: 620px;
+        color: white;
+        font-family: Noto Sans KR;
+    }
+    .contentLayer-text h4{
+        font-weight: 100;
+    }
+    .contentLayer-text h3{
+        position: relative;
+        top: 7px;
+    }
+    .contentLayer-title {
+        border-radius: 7.5px;
+        margin-top: 15px;
+        width: 180px;
+        height: 45px;
+        text-align: center;
+        background-color: rgb(255, 144, 4);
+        font-family: Noto Sans KR;
+        font-weight: 300;
+    }
+    .contentLayer-title h4{
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .logo-img{
+        margin-top: 10px;
+        width: 100px;
         height: 30px;
-        width: 200px;
-        color: white;
     }
+    
 
 
 
@@ -311,36 +386,56 @@
 </style>
 
 <header>
-    <div class="binbox"></div>
-    <hr color="#9BC3FF">
-    <div class="binbox2"></div>
+
+    <div class="top-menu">
+        <img src="dhd_logo.jpg" class="logo-img">
+
+        <a class="a2" href="">｜</a>
+        <a class="a1" href="">메인페이지</a>
+        <a class="a2" href="">｜</a>
+        <a class="a1" href="">팀 설명</a>
+    </div>
+
+    <div class="title-bar">
+        <h1>옥탑방 고양이</h1>
+    </div>
+
+    <div class="box-line"></div>
+
+    <div class="box-tag"></div>
+
 </header>
-<content>
-    <div class="seolmyonglan">설명</div>
-    <div class="sajin"><img src="http://tny.im/nuo">
-        <img src="http://tny.im/nuO">
+
+<div class="sajin">
+    <img src="https://bit.ly/2Wqva7j" width="750px">
+</div>
+
+<div class="contentLayer-tag">
+</div>
+<div class="contentLayer-text">
+    <div class="contentLayer-title">
+        <h3>옥탑방 고양이</h3>
     </div>
+    <h4>
+        극장 - 틴틴홀 대학로점
+        <br>
+        가격 - 8000원~35000원/인
+        <br>
+        공연 시간: 1시간 40분
+        <br>
+        관람 등급: 13세 이상
+        <br>
+        (신분증/학생증 필수)
+        <br>
+        <br>
+        작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이),
+        그리고 미야라는 진짜 고양이,
+        이렇게 셋이서 알콩달콩 살아가면서 때론 서로
+        치고받고 싸우면서 정들어가는 동거 이야기이다.
+    </h4>
+</div>
 
-
-    <div class="cont1">개요</div>
-
-    <div class="gayyo">
-        <h4>
-            극장 - 틴틴홀 대학로점
-            <br>
-            가격 - 8000원~35000원/인
-            <br>
-            공연 시간: 1시간 40분
-            <br>
-            관람 등급: 13세 이상 (신분증/학생증 필수)
-            <br>
-            <br>
-            작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이),
-            그리고 미야라는 진짜 고양이.
-            이렇게 셋이서 알콩달콩 살아가면서 때론 서로
-            치고받고 싸우면서 정들어가는 동거 이야기이다.
-        </h4>
-    </div>
+</body>
 </content>
 
 <body>
