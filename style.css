@@ -47,9 +47,8 @@ header nav a {
 
 .title {
     color: white;
-    position: relative;
-    left: 1200px;
-    bottom: 850px;
+    margin-left: 1200px;
+    margin-top: -850px;
 }
 
 .text1 {
@@ -64,14 +63,14 @@ header nav a {
     width: 720px;
     height: 520px;
     overflow: hidden;
-    position: absolute;
-    top: 360px;
-    left: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .buttons img {
     position: absolute;
-    top: 50%;
+    top: 70%;
     margin-top: -10px;
     background: none;
     border: 0;
@@ -141,27 +140,40 @@ header nav a {
     font-weight: lighter;
 }
 
+#container {
+    height: 750px;
+    width: 1040px;
+}
 
-/* #container {
+#container .box {
+    height: 750px;
+    width: 333px;
     display: flex;
     justify-content: center;
-    color: black;
     font-size: 15px;
+    float: left;
+    background: black;
+    background: linear-gradient(-45deg, transparent 15px, black 0);
 }
 
-.box {
-    height: auto;
-    width: 346px;
-    margin: 10px;
-    flex-grow: 1;
+#container .box .img {
+    height: 500px;
+    width: 333px;
 }
 
-.common {
-    border-right: solid 1px gray;
-} */
+#container .box .yginfo {
+    height: 250px;
+    width: 333px;
+    background: skyblue;
+    background: linear-gradient(-45deg, transparent 15px, skyblue 0);
+    position: relative;
+    z-index: 2;
+    position: relative;
+    top: 500px;
+}
 
-#명소 {
-    max-height: 1320px;
+div.box.common {
+    margin-right: 20px;
 }
 
 .ms {
@@ -175,13 +187,23 @@ header nav a {
     background-color: white;
 }
 
-.msbox {
+.msbox1 {
+    height: 360px;
+    position: relative;
+}
+
+.msbox2 {
+    height: 360px;
+    position: relative;
+}
+
+.msbox3 {
     height: 360px;
     position: relative;
 }
 
 .mslist {
-    height: 180px;
+    height: 540px;
     margin: 0;
 }
 
