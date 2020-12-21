@@ -22,7 +22,7 @@ footer {
 }
 .name {
     text-align: center;
-    positixxon: relative;
+    position: relative;
     top: 15px;
     right: 40px;
     color: black;
