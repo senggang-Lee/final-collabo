@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daehongdan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Jua&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    .sajin img {
+        margin: 0 10px;
+    }
+
+    .sajin {
+        margin-top: 100px;
+        text-align: left;
+        width: 100%;
+
+    }
+    #logo1 {
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 100px;
+    }
+    .container {
+        height: auto;
+    }
+    .container2 {
+        width: 1500px;
+        height: 300px;
+        text-align: center;
+        background-color: rgba(38, 38, 143, 0.801);
+    }
+    #logo2 {
+        width: 700px;
+        height: 100px;
+        left: 415px;
+        top: 1680px;
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        background-color: white;
+        color: rgba(38, 38, 143, 0.801);
+    }
+    .playlist {
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .playlist li button {
+        width: 90%;
+        height: 100px;
+    }
+    .playlist li {
+        float: left;
+        width: 31%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #button1 {
+        width: 300px;
+        background-color: skyblue;
+    }
+    #button1:hover {
+        background-color: rgb(114, 176, 201);
+    }
+    #button2 {
+        width: 300px;
+        background-color: rgb(232, 195, 127);
+    }
+    #button2:hover {
+        background-color: rgb(192, 162, 107);
+    }
+    #button3 {
+        width: 300px;
+        background-color: rgb(112, 112, 247);
+    }
+    #button3:hover {
+        background-color: rgb(87, 87, 194);
+    }
+    #box {
+        margin-left: 500px;
+        background-color: #64AAFF;
+    }
+    .inner-container2 {
+        background-color: #64AAFF;
+        height: 120px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .gayyo {
+        width: 70%;
+        height: 200px;
+        background: #ffffff;
+        margin: 20px auto;
+        border: 2px solid #45b5ff;
+        overflow-wrap: break-word;
+        position: relative;
+        text-align: left;
+    }
+    .seolmyonglan {
+        width: 70%;
+        height: 200px;
+        background: #5ABEFF;
+        margin: 20px auto;
+    }
+    .cont1 {
+        width: 70%;
+        height: 10px;
+        background: #ffffff;
+        margin: 20px auto;
+
+    }
+    .hr {
+        margin: 100px;
+    }
+    .binbox {
+        height: 50px;
+        width: 200px;
+        color: white;
+    }
+    .binbox2 {
+        height: 30px;
+        width: 200px;
+        color: white;
+    }
+    #ping1 {
+        /* 왼쪽에서 두 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 49%;
+        top: 1260px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
+    #ping2 {
+        /* 왼쪽에서 여덟 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 67%;
+        top: 1110px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
+    #ping3 {
+        /* 왼쪽에서 일곱 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 66%;
+        top: 1140px;
+        position: absolute;
+        background-color: skyblue;
+        width: 10px;
+        height: 10px;
+    }
+    #ping4 {
+        /* 왼쪽에서 세 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 49%;
+        top: 1280px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+    #ping5 {
+        /* 왼쪽에서 첫 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 47%;
+        top: 1190px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+    #ping6 {
+        /* 왼쪽에서 여섯 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 56%;
+        top: 1100px;
+        position: absolute;
+        background-color: rgb(232, 195, 127);
+        width: 10px;
+        height: 10px;
+    }
+    #ping7 {
+        /* 왼쪽에서 다섯 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 56%;
+        top: 1130px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+    #ping8 {
+        /* 맨 아래 꺼 */
+        list-style: inside;
+        visibility: hidden;
+        left: 57%;
+        top: 1580px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+    #ping9 {
+        /* 왼쪽에서 네 번째 */
+        list-style: inside;
+        visibility: hidden;
+        left: 55%;
+        top: 1250px;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: rgb(112, 112, 247);
+    }
+    body{
+        max-width: none;
+        margin: auto 0;
+    }
+
+    header {
+        position: relative;
+    }
+
+    .top-menu {
+        margin-left: 20px;
+        
+        height: 20px;
+    }
+
+    .a1:hover {
+        color: red;
+    }
+    .a1 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+
+    }
+
+    .a2 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+    }
+
+
+    .title-bar {
+        width: 100%;
+        height: 70px;
+        background-color: rgb(0, 117, 186);
+        /*border: 20px solid rgb(255, 0, 0);*/
+        text-align: center;
+        color: white;
+        margin-top: 30px; 
+    }
+
+    .title-bar h1 {
+        font-family: Noto Sans KR;
+        line-height: 70px;
+        font-weight: 500;
+    }
+
+    .box-line {
+        margin-top: 5px;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(1, 78, 128);
+    }
+
+    .box-tag {
+        position: absolute;
+        width: 40px;
+        height: 100px;
+        top: 70px;
+        left: 25px;
+        opacity: 0.8;
+        background-color: rgb(254, 141, 197);
+    }
+
+    .contentLayer-tag {
+        position: absolute;
+        width: 300px;
+        top: 350px;
+        height: 480px;
+        left: 450px;
+        opacity: 0.73;
+        background-color: rgb(0, 117, 186);
+        margin-right: 20px;
+    }
+
+    .contentLayer-text {
+        position: absolute;
+        width: 280px;
+        top: 338px;
+        height: 480px;
+        left: 460px;
+        color: white;
+        font-family: Noto Sans KR;
+    }
+    .contentLayer-text h4{
+        font-weight: 100;
+    }
+    .contentLayer-title {
+        border-radius: 5px;
+        margin-top: 10px;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        background-color: rgb(255, 144, 4);
+        font-family: Noto Sans KR;
+        font-weight: 300;
+    }
+    .contentLayer-title h4{
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .logo-img{
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+    }
+</style>
+<header>
+</style>
+<body>
+    <header>
+   
+    <div class="top-menu">
+        <img src="dhd_logo.jpg" class="logo-img">
+     
+        <a class="a2"href="">｜</a>
+        <a class="a1"href="">메인페이지</a>
+        <a class="a2"href="">｜</a>
+        <a class="a1"href="">팀 설명</a>
+    </div>
+
+    <div class="title-bar">
+        <h1>옥탑방 고양이</h1>
+    </div>
+
+    <div class="box-line"></div>
+
+    <div class="box-tag"></div>
+
+</header>
+
+<div class="sajin">
+    <img src="https://bit.ly/2Wqva7j" width="500px">
+</div>
+
+<div class="contentLayer-tag">
+</div>
+<div class="contentLayer-text">
+    <div class="contentLayer-title">
+        <h4>옥탑방 고양이</h4>
+    </div>
+    <h4>
+        극장 - 틴틴홀 대학로점
+        <br>
+        가격 - 8000원~35000원/인
+        <br>
+        공연 시간: 1시간 40분
+        <br>
+        관람 등급: 13세 이상
+        <br>
+        (신분증/학생증 필수)
+        <br>
+        <br>
+        작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이),
+        그리고 미야라는 진짜 고양이,
+        이렇게 셋이서 알콩달콩 살아가면서 때론 서로
+        치고받고 싸우면서 정들어가는 동거 이야기이다.
+    </h4>
+</div>
+</content>
+<body>
+    </div>
+    <div class="inner-container1">
+        <nav>
+            <p id="logo1"> 위치 </p>
+            <div class="picture">
+                <div class="container"><img src="map.jpg" width="1500">
+                    <div id="ping1"></div>
+                    <div id="ping2"></div>
+                    <div id="ping3"></div>
+                    <div id="ping4"></div>
+                    <div id="ping5"></div>
+                    <div id="ping6"></div>
+                    <div id="ping7"></div>
+                    <div id="ping8"></div>
+                    <div id="ping9"></div>
+                </div>
+            </div>
+            <div class="container2">
+                <p id="logo2"> <strong>주변에서 할 수 있는 것</strong></p>
+            </div>
+            <ul class="playlist">
+                <li>
+                    <button type="button" id="button1">음식점</button>
+                </li>
+                <li>
+                    <button type="button" id="button2">카페</button>
+                </li>
+                <li>
+                     <button type="button" id="button3">편의점</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button4">버튼4</button>
+                     <button type="button" id="button4">홍대개미</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button5">버튼5</button>
+                     <button type="button" id="button5">캐츠카페</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button6">버튼6</button>
+                     <button type="button" id="button6">GS25</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button7">버튼7</button>
+                     <button type="button" id="button7">순남시래기</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button8">버튼8</button>
+                     <button type="button" id="button8">이디야(EDIYA)</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button9">버튼9</button>
+                     <button type="button" id="button9">GS25 2</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button10">버튼10</button>
+                     <button type="button" id="button10">여로에프앤씨</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button11">버튼11</button>
+                     <button type="button" id="button11">스카이 커피숍</button>
+                 </li>
+                 <li>
+                     <button type="button" id="button12">버튼12</button>
+                     <button type="button" id="button12">GS25 3</button>
+                 </li>
+             </ul>
+ </body>
