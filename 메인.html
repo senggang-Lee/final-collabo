@@ -46,28 +46,32 @@
                         <div class="list">
                             <strong>옥탑방 고양이</strong>
                             <p class="inform"><br>작가의 꿈을 안고 상경한 경상도 여자 정은과 정체를 알 수 없는 미스터리 서울 남자 경민이 옥탑방으로 동시에 이사를 온다. 알고 보니 이중 계약..
-                                <br><br><a href="연극.html"><button>연극 상세 정보-></button></a></p>
-                            </class>
+                                <br><br><a href="./연극 페이지/index.html"><button>연극 상세 정보-></button></a>
+                            </p>
                         </div>
                     </div>
                     <div class="inner">
                         <img src="이미지/김종욱찾기.png">
                         <div class="list">
-                            <strong>옥탑방 고양이</strong></div>
-                        <p class="inform"><br>냥냥~
-                            <br><br><button>연극 상세 정보-></button>
-                        </p>
+                            <strong>김종욱 찾기</strong>
+                            <p class="inform"><br>선자리에 첫사랑을 잊지 못하는 여자로 소문난 여주인공으로 인해 아버지는 딸의 손을 잡고 ‘첫사랑 찾기 주식회사’를 찾기에 이르고 그곳에서 여주인공은 ‘첫사랑을 찾아주는 남자’를 만나게 된다. 그리고 두 사람은 인도에서 만났던, 지금은 서른 초반이 되었을 추억 속의 김종욱을 찾아 나서기 시작한다.
+                                <br><br><button>연극 상세 정보-></button>
+                            </p>
+                        </div>
                     </div>
                     <div class="inner">
                         <img src="이미지/죽여주는이야기.png">
                         <div class="list">
-                            <strong>옥탑방 고양이</strong></div>
-                        <p class="inform"><br>냥냥~
-                            <br><br><button>연극 상세 정보-></button></p>
+                            <strong>죽여주는 이야기</strong>
+                            <p class="inform"><br>자살 사이트를 운영하고 있는 ID "안락사"의 공간에 괴기스러워 보이는 여자가 나타난다. 그 여자의 ID는 '마돈나' 자신의 정체를 숨기고 자살상품을 살듯말듯 하는 가운데 '바보래용'이라는 ID를 가진 또 한 사내가 나타나며 일은 점점 꼬여 가는데... 살벌해 보이는 공간에 살벌해 보이는 인물들이 '자살'이라는 살벌한 이야기를 하는데 왜이렇게 웃음이 터지는지 연극을 통해 그 진실을 파헤쳐보자.
+                                <br><br><button>연극 상세 정보-></button>
+                            </p>
+                        </div>
                     </div>
                 </div>
-
             </div>
+
+        </div>
         </div>
         <div class="buttons">
             <img src="./resource/btn_prev.png" class="btnp">
@@ -78,7 +82,7 @@
         <div class="inner-container">
             <div id="container"></div>
             <p class="ms">연극거리 근처 명소</p>
-            <div class="msbox1" style="overflow: hidden;">
+            <div class="msbox1" style="overflow: hidden;height: 360px;">
                 <div class="mslist">
                     <div class="msimg"><img src="이미지/마로니에공원.png">
                         <div class="마로니에">마로니에공원</div>
@@ -96,7 +100,7 @@
                 </div>
             </div>
             <div id="box"></div>
-            <div class="msbox2" style="overflow: hidden;">
+            <div class="msbox2" style="overflow: hidden;height: 360px;">
                 <div class="mslist">
                     <div class="msimg"><img src="이미지/낙산공원.png">
                         <div class="낙산">낙산공원</div>
@@ -114,7 +118,7 @@
                 </div>
             </div>
             <div id="box"></div>
-            <div class="msbox3" style="overflow: hidden;">
+            <div class="msbox3" style="overflow: hidden;height: 360px;">
                 <div class="mslist">
                     <div class="msimg"><img src="이미지/이화마을.png">
                         <div class="이화">이화마을</div>
@@ -139,8 +143,16 @@
         </footer>
     </main>
     <script>
+        window.onfocus = function() {}
+        window.onload = function() {
+            window.focus(); // 현재 window 즉 익스플러러를 윈도우 최상단에 위치
+            window.moveTo(0, 0); // 웹 페이지의 창 위치를 0,0 (왼쪽 최상단) 으로 고정
+            window.resizeTo(1280, 800); // 웹페이지의 크기를 가로 1280 , 세로 800 으로 고정(확장 및 축소)
+        }
         var a = 0
-        var posY = 360
+        var pos1 = 360
+        var pos2 = 360
+        var pos3 = 360
         var itv;
         document.querySelector(".btnp").addEventListener('click', function() {
             if (0 > a)
@@ -155,34 +167,34 @@
 
         });
 
-        document.querySelector(".msbox1").addEventListener('mouseenter', function() {
+        document.querySelector(".msbox1").addEventListener('mouseover', function() {
             if (document.querySelector(".msbox1").style.height < 540 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 540) {
+                    if (pos1 == 540) {
                         clearInterval(itv);
                     } else {
-                        posY += 10;
-                        document.querySelector(".msbox1").style.height = posY + "px"
+                        pos1 += 10;
+                        document.querySelector(".msbox1").style.height = pos1 + "px"
                     }
 
                 }
 
             }
         })
-        document.querySelector(".msbox1").addEventListener('mouseleave', function() {
+        document.querySelector(".msbox1").addEventListener('mouseout', function() {
             if (document.querySelector(".msbox1").style.height > 360 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 360) {
+                    if (pos1 <= 360) {
                         clearInterval(itv);
                     } else {
-                        posY -= 10;
-                        document.querySelector(".msbox1").style.height = posY + "px"
+                        pos1 -= 10;
+                        document.querySelector(".msbox1").style.height = pos1 + "px"
                     }
 
                 }
@@ -190,34 +202,34 @@
             }
         })
 
-        document.querySelector(".msbox2").addEventListener('mouseenter', function() {
+        document.querySelector(".msbox2").addEventListener('mouseover', function() {
             if (document.querySelector(".msbox2").style.height < 540 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 540) {
+                    if (pos2 == 540) {
                         clearInterval(itv);
                     } else {
-                        posY += 10;
-                        document.querySelector(".msbox2").style.height = posY + "px"
+                        pos2 += 10;
+                        document.querySelector(".msbox2").style.height = pos2 + "px"
                     }
 
                 }
 
             }
         })
-        document.querySelector(".msbox2").addEventListener('mouseleave', function() {
+        document.querySelector(".msbox2").addEventListener('mouseout', function() {
             if (document.querySelector(".msbox2").style.height > 360 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 360) {
+                    if (pos2 <= 360) {
                         clearInterval(itv);
                     } else {
-                        posY -= 10;
-                        document.querySelector(".msbox2").style.height = 360 + "px"
+                        pos2 -= 10;
+                        document.querySelector(".msbox2").style.height = pos2 + "px"
                     }
 
                 }
@@ -225,34 +237,34 @@
             }
         })
 
-        document.querySelector(".msbox3").addEventListener('mouseenter', function() {
+        document.querySelector(".msbox3").addEventListener('mouseover', function() {
             if (document.querySelector(".msbox3").style.height < 540 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 540) {
+                    if (pos3 == 540) {
                         clearInterval(itv);
                     } else {
-                        posY += 10;
-                        document.querySelector(".msbox3").style.height = posY + "px"
+                        pos3 += 10;
+                        document.querySelector(".msbox3").style.height = pos3 + "px"
                     }
 
                 }
 
             }
         })
-        document.querySelector(".msbox3").addEventListener('mouseleave', function() {
+        document.querySelector(".msbox3").addEventListener('mouseout', function() {
             if (document.querySelector(".msbox3").style.height > 360 + "px") {
                 clearInterval(itv);
                 itv = setInterval(frame, 1);
 
                 function frame() {
-                    if (posY == 360) {
+                    if (pos3 <= 360) {
                         clearInterval(itv);
                     } else {
-                        posY -= 10;
-                        document.querySelector(".msbox3").style.height = posY + "px"
+                        pos3 -= 10;
+                        document.querySelector(".msbox3").style.height = pos3 + "px"
                     }
 
                 }
@@ -261,17 +273,20 @@
         })
         window.onload = function() {
             var data = [{
-                "photo": "/Users/root-_-/Documents/GitHub/final-collabo/이미지/옥탑방고양이.png",
+                "photo": "이미지/옥탑방고양이.png",
+                "content": "옥탑방고양이",
+                "julguri": "작가의 꿈을 안고 상경한 경상도 여자 정은과 정체를 알 수 없는 미스터리 서울 남자 경민이 옥탑방으로 동시에 이사를 온다. 알고 보니 이중 계약..",
+                "information": "first"
+            }, {
+                "photo": "이미지",
                 "content": "연극 ooo",
-                "information": "common"
+                "julguri": "작가의 꿈을 안고 상경한 경상도 여자 정은과 정체를 알 수 없는 미스터리 서울 남자 경민이 옥탑방으로 동시에 이사를 온다. 알고 보니 이중 계약..",
+                "information": "second"
             }, {
                 "photo": "배움의 원칙",
                 "content": "연극 ooo",
-                "information": "common"
-            }, {
-                "photo": "배움의 원칙",
-                "content": "연극 ooo",
-                "information": "last"
+                "julguri": "작가의 꿈을 안고 상경한 경상도 여자 정은과 정체를 알 수 없는 미스터리 서울 남자 경민이 옥탑방으로 동시에 이사를 온다. 알고 보니 이중 계약..",
+                "information": "third"
             }]
 
             for (var i in data) {
@@ -279,15 +294,22 @@
                 console.log(singleData)
                 var element = document.createElement('div')
                 var photo = document.createElement('img')
+                var julguri = document.createElement('div')
                 var content = document.createElement('div')
 
-                photo.innerText = singleData.photo
+                photo.setAttribute("src", singleData.photo)
+                photo.classList.add("img")
                 content.innerText = singleData.content
+                julguri.innerText = singleData.julguri
 
-                content.classList.add("yginfo")
+                content.classList.add("ygtitle")
+                julguri.classList.add("yginfo")
+
+
 
                 element.appendChild(photo)
                 element.appendChild(content)
+                element.appendChild(julguri)
                 element.classList.add('box')
                 element.classList.add(singleData["information"])
 
