@@ -120,7 +120,7 @@
 
     }
 
-    header {
+    head {
         position: relative;
     }
 
@@ -392,18 +392,47 @@
         border-bottom: 15px solid transparent;
         border-left: 10px solid transparent;
     }
+    header {
+    height: 100px;
+    width: auto;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+header .dhd {
+    font-size: 40px;
+    position: absolute;
+    line-height: 250%;
+    margin-left: 40px;
+    color: black;
+}
+
+header nav {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 180px;
+    line-height: 500%;
+}
+
+header nav a {
+    margin: 0 10px;
+}
 </style>
-
 <header>
-
-    <div class="top-menu">
-        <img src="dhd_logo.jpg" class="logo-img">
-
-        <a class="a2" href="">｜</a>
-        <a class="a1" href="">메인페이지</a>
-        <a class="a2" href="">｜</a>
-        <a class="a1" href="">팀 설명</a>
+    <div class="start">
+        <a href="./메인.html" class="dhd">
+            대홍단
+        </a>
+        <nav>
+            <a href="./메인.html">연극 페이지</a>
+            <a href="./팀소개.html">팀 소개</a>
+        </nav>
     </div>
+</header>
+<head>
 
     <div class="title-bar">
         <h1>옥탑방 고양이</h1>
@@ -413,7 +442,7 @@
 
     <div class="box-tag"></div>
 
-</header>
+</head>
 
 <div class="sajin">
     <img src="https://bit.ly/2Wqva7j" width="750px">
