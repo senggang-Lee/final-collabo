@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daehongdan</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Jua&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+<style>
+    #logo1 {
+        margin-top: 20px;
+        margin-left: 100px;
+        font-size: 100px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .container2 {
+        width: 1500px;
+        height: 300px;
+        text-align: center;
+        background-color: rgb(0, 117, 186);
+    }
+
+    #logo2 {
+        width: 700px;
+        height: 100px;
+        left: 400px;
+        top: 2340px;
+        position: absolute;
+        text-align: center;
+        font-size: 60px;
+        background-color: white;
+        color: rgb(0, 117, 186);
+    }
+
+
+    .playlist {
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .playlist li button {
+        width: 90%;
+        height: 100px;
+    }
+
+    .playlist li {
+        float: left;
+        width: 31%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #button1 {
+        width: 300px;
+        background-color: skyblue;
+    }
+
+    #button1:hover {
+        background-color: rgb(114, 176, 201);
+    }
+
+    #button2 {
+        width: 300px;
+        background-color: rgb(232, 195, 127);
+    }
+
+    #button2:hover {
+        background-color: rgb(192, 162, 107);
+    }
+
+    #button3 {
+        width: 300px;
+        background-color: rgb(112, 112, 247);
+    }
+
+    #button3:hover {
+        background-color: rgb(87, 87, 194);
+    }
+
+
+
+    #box {
+        margin-left: 500px;
+        background-color: rgb(0, 117, 186);
+    }
+
+    .inner-container2 {
+        background-color: rgb(0, 117, 186);
+        height: 120px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    body {
+        max-width: none;
+        margin: auto 0;
+    }
+
+    .sajin img {
+        margin: 0 10px;
+    }
+
+    .sajin {
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+        display: center;
+    }
+
+    head {
+        position: relative;
+    }
+
+    .top-menu {
+        margin-left: 20px;
+
+        height: 20px;
+    }
+
+    .a1:hover {
+        color: red;
+    }
+
+    .a1 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+
+    }
+
+    .a2 {
+        color: black;
+        text-decoration: none;
+        font-family: Noto Sans KR;
+        font-weight: 100;
+        line-height: 20px;
+    }
+
+
+    .title-bar {
+        width: 100%;
+
+        height: 120px;
+
+        background-color: rgb(0, 117, 186);
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .title-bar h1 {
+        font-family: Noto Sans KR;
+        line-height: 70px;
+        font-weight: 900;
+        font-size: 50px;
+        position: relative;
+        top: 17px;
+
+    }
+
+    .box-line {
+        margin-top: 5px;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(0, 117, 186);
+    }
+
+    .box-tag {
+        position: absolute;
+        width: 40px;
+        height: 100px;
+        top: 210px;
+        left: 25px;
+        opacity: 0.8;
+        background-color: rgb(254, 141, 197);
+    }
+
+    .contentLayer-tag {
+        position: absolute;
+        width: 300px;
+        top: 430px;
+        height: 480px;
+        left: 950px;
+        /*610px*/
+        opacity: 0.73;
+        background-color: rgb(0, 117, 186);
+        margin-right: 20px;
+    }
+
+    .contentLayer-text {
+        position: absolute;
+        width: 280px;
+        top: 420px;
+        height: 0px;
+        left: 960px;
+        color: white;
+        font-family: Noto Sans KR;
+    }
+
+    .contentLayer-text h4 {
+        font-weight: 100;
+    }
+
+    .contentLayer-text h3 {
+        position: relative;
+        top: 7px;
+    }
+
+    .contentLayer-title {
+        border-radius: 7.5px;
+        margin-top: 15px;
+        width: 180px;
+        height: 45px;
+        text-align: center;
+        background-color: rgb(255, 144, 4);
+        font-family: Noto Sans KR;
+        font-weight: 300;
+    }
+
+    .contentLayer-title h4 {
+        line-height: 30px;
+        font-weight: 400;
+    }
+
+    .logo-img {
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+    }
+
+
+
+
+    #ping1 {
+        /* 홍대개미(음식점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 47.5%;
+        top: 1940px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid skyblue;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping2 {
+        /* 여로에프엔씨(음식점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 66%;
+        top: 1770px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid skyblue;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping3 {
+        /* 순남시래기(음식점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 65.5%;
+        top: 1800px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid skyblue;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping4 {
+        /* 캐츠카페(카페) */
+        list-style: inside;
+        visibility: hidden;
+        left: 48.5%;
+        top: 1925px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(232, 195, 127);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping5 {
+        /* 이디야(카페) */
+        list-style: inside;
+        visibility: hidden;
+        left: 45.5%;
+        top: 1850px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(232, 195, 127);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping6 {
+        /* 스카이 커피숍(카페) */
+        list-style: inside;
+        visibility: hidden;
+        left: 55.5%;
+        top: 1760px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(232, 195, 127);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping7 {
+        /* GS25 1 (편의점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 55.5%;
+        top: 1790px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(112, 112, 247);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping8 {
+        /* GS25 2 (편의점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 55.9%;
+        top: 2240px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(112, 112, 247);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    #ping9 {
+        /* GS25 1 (편의점) */
+        list-style: inside;
+        visibility: hidden;
+        left: 54.5%;
+        top: 1910px;
+        position: absolute;
+        width: 0.1px;
+        height: 1px;
+        display: block;
+        border: 1px solid #000;
+        border-top: 15px solid rgb(112, 112, 247);
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 10px solid transparent;
+    }
+
+    header {
+        height: 100px;
+        width: auto;
+        background-color: white;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    header .dhd {
+        font-size: 40px;
+        position: absolute;
+        line-height: 250%;
+        margin-left: 40px;
+        color: black;
+    }
+
+    header nav {
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        left: 180px;
+        line-height: 500%;
+    }
+
+    header nav a {
+        margin: 0 10px;
+    }
+</style>
+<header>
+    <div class="start">
+        <a href="./메인.html" class="dhd">
+            대홍단
+        </a>
+        <nav>
+            <a href="./메인.html">연극 페이지</a>
+            <a href="./팀소개.html">팀 소개</a>
+        </nav>
+    </div>
+</header>
+
+<head>
+
+    <div class="title-bar">
+        <h1>옥탑방 고양이</h1>
+    </div>
+
+    <div class="box-line"></div>
+
+    <div class="box-tag"></div>
+
+</head>
+
+<div class="sajin">
+    <img src="https://bit.ly/2Wqva7j" width="750px">
+</div>
+
+<div class="contentLayer-tag">
+</div>
+<div class="contentLayer-text">
+    <div class="contentLayer-title">
+        <h3>옥탑방 고양이</h3>
+    </div>
+    <h4>
+        극장 - 틴틴홀 대학로점
+        <br>
+        가격 - 8000원~35000원/인
+        <br>
+        공연 시간: 1시간 40분
+        <br>
+        관람 등급: 13세 이상
+        <br>
+        (신분증/학생증 필수)
+        <br>
+        <br>
+        작가지망생인 여주인공 주인(주인님)과 대학생인 남주인공 야옹이(고양이),
+        그리고 미야라는 진짜 고양이,
+        이렇게 셋이서 알콩달콩 살아가면서 때론 서로
+        치고받고 싸우면서 정들어가는 동거 이야기이다.
+    </h4>
+</div>
+
+</body>
+</content>
+
+<body>
+    </div>
+    <div class="inner-container1">
+        <nav>
+            <p id="logo1"> 위치 </p>
+            <div class="picture">
+
+                <div class="container"><img src="map.jpg" width="1500">
+                    <div id="ping1"></div>
+                    <div id="ping2"></div>
+                    <div id="ping3"></div>
+                    <div id="ping4"></div>
+                    <div id="ping5"></div>
+                    <div id="ping6"></div>
+                    <div id="ping7"></div>
+                    <div id="ping8"></div>
+                    <div id="ping9"></div>
+
+                </div>
+
+            </div>
+            <div class="container2">
+                <p id="logo2"> <strong>주변에서 할 수 있는 것</strong></p>
+            </div>
+            <ul class="playlist">
+                <li>
+                    <button type="button" id="button1">음식점</button>
+                </li>
+                <li>
+                    <button type="button" id="button2">카페</button>
+                </li>
+                <li>
+                    <button type="button" id="button3">편의점</button>
+                </li>
+                <li>
+                    <button type="button" id="button4">홍대개미</button>
+                </li>
+                <li>
+                    <button type="button" id="button5">캐츠카페</button>
+                </li>
+                <li>
+                    <button type="button" id="button6">GS25</button>
+                </li>
+                <li>
+                    <button type="button" id="button7">순남시래기</button>
+                </li>
+                <li>
+                    <button type="button" id="button8">이디야(EDIYA)</button>
+                </li>
+                <li>
+                    <button type="button" id="button9">GS25 2</button>
+                </li>
+                <li>
+                    <button type="button" id="button10">여로에프앤씨</button>
+                </li>
+                <li>
+                    <button type="button" id="button11">스카이 커피숍</button>
+                </li>
+                <li>
+                    <button type="button" id="button12">GS25 3</button>
+                </li>
+            </ul>
+</body>
+<script>
+    var a = document.getElementById('ping1')
+    var b = document.getElementById('ping2')
+    var c = document.getElementById('ping3')
+    var d = document.getElementById('ping4')
+    var e = document.getElementById('ping5')
+    var f = document.getElementById('ping6')
+    var g = document.getElementById('ping7')
+    var h = document.getElementById('ping8')
+    var i = document.getElementById('ping9')
+
+    // 하나 누르면 카테고리별로 다 나오는 것들
+    document.getElementById('button1').addEventListener('click', function () {
+        a.style.visibility = 'visible';
+        b.style.visibility = 'visible';
+        c.style.visibility = 'visible';
+    })
+    document.getElementById('button2').addEventListener('click', function () {
+        d.style.visibility = 'visible';
+        e.style.visibility = 'visible';
+        f.style.visibility = 'visible';
+    })
+    document.getElementById('button3').addEventListener('click', function () {
+        g.style.visibility = 'visible';
+        h.style.visibility = 'visible';
+        i.style.visibility = 'visible';
+    })
+    // 하나하나 눌러야 되는 것들
+    document.getElementById('button4').addEventListener('click', function () {
+        a.style.visibility = 'visible';
+    })
+    document.getElementById('button5').addEventListener('click', function () {
+        d.style.visibility = 'visible';
+    })
+    document.getElementById('button6').addEventListener('click', function () {
+        g.style.visibility = 'visible';
+    })
+    document.getElementById('button7').addEventListener('click', function () {
+        b.style.visibility = 'visible';
+    })
+    document.getElementById('button8').addEventListener('click', function () {
+        e.style.visibility = 'visible';
+    })
+    document.getElementById('button9').addEventListener('click', function () {
+        h.style.visibility = 'visible';
+    })
+    document.getElementById('button10').addEventListener('click', function () {
+        c.style.visibility = 'visible';
+    })
+    document.getElementById('button11').addEventListener('click', function () {
+        f.style.visibility = 'visible';
+    })
+    document.getElementById('button12').addEventListener('click', function () {
+        i.style.visibility = 'visible';
+    })
+</script>
+<footer>
+    <div class="inner-container2">
+        <p class="menu"> <br>Team.대홍단 TEL.010 1234 5678<br>
+            이메일 daehongdan7@gmail.com<br>
+            주소 : 서울특별시 종로구 이화동 대학로 116 공공그라운드 4층 거꾸로 캠퍼스
+            <br>
+    </div>
+    </box>
+
+</footer>
+
+</html>
