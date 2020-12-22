@@ -8,7 +8,7 @@
 }
 main .inner-container {
     width: 100%;
-    background-color: rgb(249, 228, 189);
+    background-color: #CBEAEB;
     height: 750px;
 }
 .배경 {
@@ -16,7 +16,7 @@ main .inner-container {
     flex-wrap: wrap;
 }
 footer {
-    background-color: rgb(129, 172, 247);
+    background-color: #AEE0C5;
     text-align: center;
     padding: 30px;
 }
@@ -79,7 +79,7 @@ footer {
 .name13{
     position: relative;
     left: 810px;
-    bottom: 97px;
+    bottom: 98px;
     color: black;
 }
 .image11,.image12{
