@@ -48,8 +48,8 @@ header nav a {
 
 .title {
     color: white;
-    margin-left: 1200px;
-    margin-top: -850px;
+    margin-left: 70%;
+    margin-top: -50%;
 }
 
 .text1 {
@@ -65,8 +65,8 @@ header nav a {
     height: 520px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 3%;
+    margin-bottom: 120px;
 }
 
 .buttons img {
