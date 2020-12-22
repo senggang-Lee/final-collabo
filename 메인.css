@@ -40,24 +40,26 @@ header nav a {
 }
 
 .mainimg .mainimg {
+    height: 1050px;
     width: 100vw;
     position: relative;
-    top: -100px;
+    top: -200px;
     z-index: -1;
 }
 
 .title {
-    color: white;
     margin-left: 70%;
-    margin-top: -50%;
+    margin-top: -55%;
 }
 
 .text1 {
     font-size: 70px;
+    color: black;
 }
 
 .text2 {
     font-size: 20px;
+    color: black;
 }
 
 .mainslide {
@@ -65,7 +67,7 @@ header nav a {
     height: 520px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 120px;
 }
 
