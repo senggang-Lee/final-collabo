@@ -5,15 +5,25 @@
 }
 
 body {
+<<<<<<< Updated upstream:메인.css
     background-color: #cbeaeb;
     overflow-x: hidden;
     color: black;
+=======
+    background-color: #0f4c81;
+    overflow-x: hidden;
+    color: white;
+>>>>>>> Stashed changes:style.css
 }
 
 header {
     height: 100px;
     width: auto;
+<<<<<<< Updated upstream:메인.css
     background-color: #cbeaeb;
+=======
+    background-color: white;
+>>>>>>> Stashed changes:style.css
     position: relative;
     top: 0px;
     left: 0px;
@@ -121,7 +131,11 @@ header nav a {
 }
 
 .inner .list {
+<<<<<<< Updated upstream:메인.css
     width: 357px;
+=======
+    width: 350px;
+>>>>>>> Stashed changes:style.css
     position: absolute;
     color: white;
     top: 30px;
@@ -149,16 +163,27 @@ header nav a {
 .inner .inform {
     font-weight: lighter;
     width: 350px;
+<<<<<<< Updated upstream:메인.css
     line-height: 150%;
 }
 
 #container {
     height: 800px;
+=======
+}
+
+#container {
+    height: 644px;
+>>>>>>> Stashed changes:style.css
     width: 1040px;
 }
 
 #container .box {
+<<<<<<< Updated upstream:메인.css
     height: 800px fixed;
+=======
+    height: 644px fixed;
+>>>>>>> Stashed changes:style.css
     width: 333px;
     justify-content: center;
     font-size: 15px;
@@ -179,17 +204,27 @@ header nav a {
     margin-top: -5px;
     padding: 15px 15px 0 15px;
     font-size: 25px;
+<<<<<<< Updated upstream:메인.css
     color: black;
 }
 
 #container .box .yginfo {
     height: 256px;
+=======
+}
+
+#container .box .yginfo {
+    height: 100px;
+>>>>>>> Stashed changes:style.css
     width: 303px;
     background: skyblue;
     background: linear-gradient(-45deg, transparent 15px, skyblue 0);
     position: relative;
     padding: 0 15px;
+<<<<<<< Updated upstream:메인.css
     color: black;
+=======
+>>>>>>> Stashed changes:style.css
 }
 
 div.box.first {
@@ -203,12 +238,16 @@ div.box.second {
 .ms {
     font-size: 30px;
     padding: 0 0 20px 10px;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px white;
 }
 
 #box {
     height: 20px;
+<<<<<<< Updated upstream:메인.css
     background-color: #cbeaeb;
+=======
+    background-color: #0f4c81;
+>>>>>>> Stashed changes:style.css
 }
 
 .msbox1 {
